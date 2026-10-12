@@ -3,8 +3,9 @@ message: "If you use this result, please cite it as below."
 title: "The 5/6-Poly-Density Question has answer no (Lean-verified)"
 authors:
   - family-names: Mack
-    given-names: Gabriel
+    given-names: Gabriel Alan
     orcid: "https://orcid.org/0009-0008-7111-6779"
+doi: "10.5281/zenodo.23309437"
 date-released: 2026-10-12
 repository-code: "https://github.com/GabeeeM/poly-density-5-6"
 license: Apache-2.0

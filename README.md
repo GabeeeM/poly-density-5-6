@@ -17,7 +17,8 @@ Polyamorous Scheduling*, [arXiv:2411.06292](https://arxiv.org/abs/2411.06292), Q
 
 This instance is infeasible for every X ≥ 1, and its poly density is exactly **3/4 + 1/X**.
 X = 13 gives d = 43/52 < 5/6. Letting X grow gives infeasible instances with density arbitrarily close
-to 3/4, so any density threshold is at most 3/4. The paper proves that d ≤ 1/4 always suffices.
+to 3/4, so the poly density threshold is at most 3/4. The paper's Theorem 1.2 shows that every DPS instance with
+d ≤ 1/4 is schedulable, so the threshold lies in [1/4, 3/4].
 
 **Why it is infeasible.**
 1. Let 0–1 meet on some day s ≥ 1.

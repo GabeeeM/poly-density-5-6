@@ -15,9 +15,9 @@ Polyamorous Scheduling*, [arXiv:2411.06292](https://arxiv.org/abs/2411.06292), Q
 |---|---|---|---|---|---|
 | f | X | 4 | 2 | 4 | 2 |
 
-This instance is infeasible for every X, and its poly density is exactly **3/4 + 1/X**.
+This instance is infeasible for every X ≥ 1, and its poly density is exactly **3/4 + 1/X**.
 X = 13 gives d = 43/52 < 5/6. Letting X grow gives infeasible instances with density arbitrarily close
-to 3/4, so any density threshold is at most 3/4. The known bound is 1/4.
+to 3/4, so any density threshold is at most 3/4. The paper proves that d ≤ 1/4 always suffices.
 
 **Why it is infeasible.**
 1. Let 0–1 meet on some day s ≥ 1.
@@ -31,7 +31,7 @@ A fractional cover of the edges by maximal matchings with total weight 3/4 + 1/X
 The cover puts 1/X on {01} and 1/4 on each of {02,14}, {03,12} and {03,14}.
 
 **Lean 4 (Mathlib).** [`PolyDensity.lean`](PolyDensity.lean) states Definitions 2.2 and 4.4 of the paper for
-arbitrary graphs. It proves:
+arbitrary simple graphs. It proves:
 - `poly_density_question_false`: the answer to Question 6.1 is no;
 - `infeasible_below`: there are infeasible instances with density in (3/4, 3/4 + ε) for every ε > 0.
 

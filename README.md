@@ -1,5 +1,7 @@
 # The 5/6-Poly-Density Question has answer no
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23309438.svg)](https://doi.org/10.5281/zenodo.23309438)
+
 **Paper:** Biktairov, Gąsieniec, Jiamjitrak, Namrata, Smith, Wild, *Simple approximation algorithms for
 Polyamorous Scheduling*, [arXiv:2411.06292](https://arxiv.org/abs/2411.06292), Question 6.1:
 

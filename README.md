@@ -37,13 +37,5 @@ The only axioms used are `propext`, `Classical.choice` and `Quot.sound`. To chec
 
 ## How it was found
 
-An autonomous AI research loop found it: Claude Code (Claude Opus 5.5) running unattended.
-1. The loop picks recent open problems, checks the literature to confirm they are still open, explores in
-   Julia and only reports results verified in Lean.
-2. An exact checker swept every graph on up to 5 vertices. It computed the poly density with Edmonds'
-   odd-set formula and decided feasibility with a fixed-point search over deadline states.
-3. The sweep found 151 infeasible instances at d = 5/6, which led to the family above. The family's
-   density was then checked against the paper's LP definition directly.
-
-[`reproduce.jl`](reproduce.jl) regenerates every number (output in [`output.txt`](output.txt)).
-A follow-up sweep found no infeasible 5-vertex instance with d ≤ 3/4.
+A Claude loop exploring open problems from recent math papers. [`reproduce.jl`](reproduce.jl) regenerates the
+supporting computations ([`output.txt`](output.txt)).
